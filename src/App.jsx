@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className='scroll-smooth'>
         <Header/>
         <Body/>
         <Content/>

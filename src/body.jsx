@@ -1,10 +1,11 @@
+import test from './images/test.png';
 function Body(){
 
     return(
         <section>
-            <div className="background">
+            <div className="background relative w-full h-150 bg-black-500 overflow-hidden">
                 <div className="car-picture">
-                    <img src="images/car.jpg" alt="car picture" class="back-img"/>
+                    <img src={test} alt="my picture" class="back-img"/>
                 </div>
                 <div className="text">
                     <h1>HI IM RIYMON ARONG!</h1>
