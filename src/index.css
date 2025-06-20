@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: var(--black);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --red: #8f091f;
+  --danger-color: #e74c3c;
+  --gray-color: #95a5a6;
+  --light-gray: #bdc3c7;
+  --white: #ffffff;
+   --black: #000000;
+}
+
+
+*{
+    margin: 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.header{
+    background-color: var(--black);
+    font-size: 18px;
+    margin-top: 1.5vh;
+    margin-bottom: 2.5vh;
+    list-style: none;
+    text-decoration: none;
+}
+.header h1{
+    padding-right: 80vh;
+    font-size: 3vh;
+    color: var(--red);
+}
+.right-header{
+    text-decoration: none;
+    justify-items: start;
+    align-items: space-between;
+    display: inline-block;
+    padding-left: 12vh;
+}
+.header ul li{
+    text-decoration: none;
+    display: inline-block;
+    align-items: space-between;
+    padding-left: 5vh;
+    font-size: 18px;
+    color: var(--white);
+    list-style: none;
+    text-decoration: none;
+    align-items: space-between;
+}
+.right-header ul li label{
+    margin-left: 2.0vh;
+}
+.right-header ul li a{
+    margin-left: 5.5vh;
+    list-style: none;
+    text-decoration: none;
+    color: var(--white);
+}
+.right-header ul li a:hover, .right-header ul li label:hover    {
+    color: var(--red);
+}
+.background{
+    display: flex;
+    align-items: space-between;
+    justify-items: center;
+    padding: 2vh;
+}
+body {
+    background-color: '';
+}
+.text{
+    padding: 5vh 3vh 0vh 0.5vh;
+    font-size: 3.2vh;
+}
+.text h1{
+    color: var(--red);
+}
+.book-now{
+    background-color: var(--red);
+    padding: 0.8vh 3vh 0.8vh 3vh;
+    margin-left: 5.5vh;
+    border-radius: 0.5vh;
+}
+.back-img{
+    border-radius: 1.5rem;
+    width: 50vh;
+    height: 50vh;
+}
+.car-picture{
+    padding-left: 5vh;
+}
+.content {
+    margin-top: 2vh;
+    padding: 5vh 0vh .5vh 5vh;
+    background-color: var(--red);   
+}
+.subcontent{
+    padding: 0vh 5vh 0vh .5vh;
+}
+
+
+
+
+/* Optional: You can still use your custom styles here */
+
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
