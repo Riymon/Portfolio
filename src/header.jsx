@@ -2,7 +2,7 @@ function Header(){
     return(
     <section>
         <header>
-            <div className='header py-2 grid grid-cols-2 gap-3 grid-rows-none my-5'>
+            <div className='header py-1 grid grid-cols-2 gap-3 grid-rows-none my-5'>
                 <div className="logo-name">
                     <h1 className=''>Riymon</h1>
                 </div>

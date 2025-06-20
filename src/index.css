@@ -33,13 +33,13 @@
     background-color: var(--black);
     font-size: 18px;
     margin-top: 1.5vh;
-    margin-bottom: 2.5vh;
+    margin-bottom: 1.5vh;
     list-style: none;
     text-decoration: none;
 }
 .header h1{
     padding-right: 80vh;
-    font-size: 3vh;
+    font-size: 3.5vh;
     color: var(--red);
 }
 .right-header{
@@ -82,14 +82,15 @@ body {
     background-color: '';
 }
 .text{
-    padding: 5vh 3vh 0vh 0.5vh;
     font-size: 3.2vh;
 }
 .text h1{
     color: var(--red);
+    font-size: 2vh;
 }
 .text2{
     color: var(--red);
+    margin-top: 2vh;
 }
 .text1{
     color: var(--white);
