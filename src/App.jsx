@@ -1,17 +1,21 @@
 import './App.css'
-import Header from '../../my-react-site-2/src/header'
-import Body from '../../my-react-site-2/src/body'
+import Header from './header'
+import Background from './Background'
 import Content from './Content'
+import AboutMe from './About-me'
+import Footer from './footer'
 
 function App() {
 
 
   return (
     <>
-      <div className='scroll-smooth'>
+      <div className='scroll-smooth' >
         <Header/>
-        <Body/>
+        <Background/>
+        <AboutMe/>
         <Content/>
+        <Footer/>
       </div>
         
     </>
