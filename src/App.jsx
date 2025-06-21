@@ -7,7 +7,6 @@ import Footer from './footer'
 
 function App() {
 
-
   return (
     <>
       <div className='scroll-smooth' >

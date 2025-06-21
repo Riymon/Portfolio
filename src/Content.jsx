@@ -1,7 +1,7 @@
 function Content() {
   return (
     <>
-    <h1 className="text2 pr-250 text-shadow-2xs text-4xl">My Services</h1>
+    <h1 id="services" className="text2 pr-250 text-shadow-2xs text-4xl">My Services</h1>
     <div className="text1 grid grid-cols-3 gap-4 h-[50vh] my-5 p-4">
         <div className="content bg-gradient-to-b from-[#000000] to-[#8f091f]">
             <h1 className="text-2xl ">HTML & CSS</h1>

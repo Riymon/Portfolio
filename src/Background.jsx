@@ -2,11 +2,11 @@ import test from './images/test.png';
 function Background(){
 
     return(
-        <section className="relative w-full h-70% bg-gradient-to-b from-[#000000] to-[#8f091f] overflow-hidden animate-fadeInUp">
+        <section id="back-sec" className="relative w-full h-[68vh] bg-gradient-to-b from-[#000000] to-[#8f091f] overflow-hidden animate-fadeInUp">
             {/* Background Curved Shape */}
-            <div className="absolute bottom-0 w-full h-[30vh] bg-gradient-to-t from-[#000000] rounded-t-[0%] opacity-90 delay-5"></div>
+            <div className="absolute bottom-0 w-full h-[10vh] bg-gradient-to-t from-[#000000] rounded-t-[0%] opacity-90 delay-5"></div>
 
-            <div className="background relative w-full h-150 bg-black-500 overflow-hidden">
+            <div className="background w-full h-150 bg-black-500 overflow-hidden">
                 <div className="backg-picture">
                     <img src={test} alt="my picture" class="back-img"/>
                 </div>

@@ -3,7 +3,7 @@
 
 
 @layer utilities {
-        @keyframes slideFadeRight {
+     @keyframes slideFadeRight {
     0% {
       opacity: 0;
       transform: translateX(-30px);
@@ -100,9 +100,7 @@
     font-size: 3.5vh;
     color: var(--red);
 }
-#about-me:hover{
-    animation: slideFadeRight;
-}
+
 .right-header{
     text-decoration: none;
     justify-items: start;
@@ -172,10 +170,16 @@ body {
 }
 .content {
     margin-top: 0vh;
-    padding: 12vh 5vh .5vh 5vh;
+    padding: 10vh 10vh .5vh 10vh;
     display: block;
     background-color: var(--red);
     height: auto;
+}
+.tech {
+  background-color: var(--black);
+  padding-right: 5vh;
+  margin-left: 2vh;
+  border-radius: 3vh;
 }
 .subcontent{
     display: flex;
@@ -188,7 +192,9 @@ body {
     justify-content: space-evenly;
     padding: 5vh 80vh;
 }
-
+.text-hover:hover{
+    animation: slideFadeRight 2s ease-out forwards ;
+}
 
 
 /* Optional: You can still use your custom styles here */
@@ -204,4 +210,20 @@ body {
   button {
     background-color: #f9f9f9;
   }
+}
+
+
+@keyframes slideFadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.about-me-hover:hover {
+  animation: slideFadeRight 0.5s ease-out forwards;
 }
