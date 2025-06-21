@@ -4,7 +4,11 @@ function Lang_And_Tools() {
   const technology = [
     { id: 1, img: test, p: 'HTML' },
     { id: 2, img: test, p: 'JavaScript' },
-    { id: 3, img: test, p: 'SupaBase' }
+    { id: 3, img: test, p: 'SupaBase' },
+    { id: 4, img: test, p: 'MySQL' },
+    { id: 5, img: test, p: 'React' },
+    { id: 6, img: test, p: 'Tailwind CSS' }
+
   ];
 
 

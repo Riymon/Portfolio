@@ -3,6 +3,9 @@
 
 
 @layer utilities {
+    .custom-gradient {
+      @apply bg-gradient-to-b from-[#000000] to-[#8f091f];
+    }
      @keyframes slideFadeRight {
     0% {
       opacity: 0;
@@ -87,14 +90,18 @@
     margin: 0px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.header{
-    background-color: var(--black);
-    font-size: 18px;
-    margin-top: 1.5vh;
-    margin-bottom: 1.5vh;
-    list-style: none;
-    text-decoration: none;
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--black);
+  z-index: 1000; /* ensures it stays above other content */
+  font-size: 18px;
+  list-style: none;
+  text-decoration: none;
+  padding-top: 1vh;
 }
+
 .header h1{
     padding-right: 60vh;
     font-size: 3.5vh;
@@ -177,9 +184,15 @@ body {
 }
 .tech {
   background-color: var(--black);
-  padding-right: 5vh;
+  padding-right: 3.5vh;
   margin-left: 2vh;
   border-radius: 3vh;
+  width: 12%;
+}
+.tech:hover{
+  animation: fadeInUp 1s ease-in;
+  box-shadow: var(--red) 0.5vh 1vh 1vh;
+  opacity: 100%;
 }
 .subcontent{
     display: flex;
@@ -227,3 +240,13 @@ body {
 .about-me-hover:hover {
   animation: slideFadeRight 0.5s ease-out forwards;
 }
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

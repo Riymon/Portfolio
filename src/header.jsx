@@ -17,6 +17,9 @@ function Header() {
 
   return (
     <section>
+      <head>
+        <title>Riymon`s Site</title>
+      </head>
       <header>
         <div className=" header py-1 grid grid-cols-2 gap-3 my-5 animate-slideFade">
           <div className="logo-name">
