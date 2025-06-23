@@ -1,6 +1,7 @@
 import Header from './header.jsx'
 import Background from './Background.jsx'
 import Content from './Content.jsx'
+import Footer from './footer.jsx'
 function ProjectPage(){
 
     return(
@@ -8,6 +9,7 @@ function ProjectPage(){
         <Header/>
         <Background/>
         <Content title ="Projects" id="projects" />
+        <Footer/>
         </>
     )
 
