@@ -7,7 +7,7 @@ function ProjectPage(){
         <>
         <Header/>
         <Background/>
-        <Content title ="Projects" id={'Services'} />
+        <Content title ="Projects" id="projects" />
         </>
     )
 
