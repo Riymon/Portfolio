@@ -1,4 +1,5 @@
-function Content() {
+function Content(content) {
+
 
   const arr = [
     {id:1, h: 'HTML', p: 'HTML'},
@@ -7,7 +8,7 @@ function Content() {
   ];
   return (
     <>
-    <h1 id="services" className="text2 pr-290 text-shadow-2xs text-4xl">My Services</h1>
+    <h1 id={content.tag} className="text2 pr-290 text-shadow-2xs text-4xl">{content.title}</h1>
     <div className="text1 grid grid-cols-3 gap-4 h-auto my-5 p-4">
         {arr.map((arrs) => (
           <div key={arrs.id} className="content custom-gradient">

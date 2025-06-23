@@ -1,0 +1,15 @@
+import Header from './header.jsx'
+import Background from './Background.jsx'
+import Content from './Content.jsx'
+function ProjectPage(){
+
+    return(
+        <>
+        <Header/>
+        <Background/>
+        <Content title ="Projects" id={'Services'} />
+        </>
+    )
+
+}
+export default ProjectPage

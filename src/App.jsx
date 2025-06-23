@@ -1,23 +1,15 @@
 import './App.css'
-import Header from './header'
-import Background from './Background'
-import Content from './Content'
-import AboutMe from './About-me'
-import Footer from './footer'
-
+import './index.css'
+import HomePage from './HomePage.jsx';
+import ProjectPage from './ProjectPage.jsx';
+import { Routes, Route } from 'react-router-dom';
 function App() {
 
   return (
-    <>
-      <div className='scroll-smooth' >
-        <Header/>
-        <Background/>
-        <AboutMe/>
-        <Content/>
-        <Footer/>
-      </div>
-        
-    </>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/projects" element={<ProjectPage />} />
+    </Routes>
   )
 }
 

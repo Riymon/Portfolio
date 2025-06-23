@@ -1,4 +1,7 @@
 import React from 'react';
+import ProjectPage from './ProjectPage.jsx';
+import { Link } from 'react-router-dom';
+
 
 function Header() {
   const handleSmoothScroll = (e) => {
@@ -14,11 +17,10 @@ function Header() {
     }
   };
 
-
-  return (
-    <section>
+  return (<>
       <head>
         <title>Riymon`s Site</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <header>
         <div className=" header py-1 grid grid-cols-2 gap-3 my-5 animate-slideFade">
@@ -28,7 +30,7 @@ function Header() {
           <div className="right-header">
             <ul>
               <li>
-                <label>+0(954) 520-7076</label>
+                <Link to="/" className="hover:cursor-pointer">Home</Link>
                 <label>
                   <a
                     href="#about" data-scroll="about" onClick={handleSmoothScroll}
@@ -40,13 +42,13 @@ function Header() {
                     <a href="#services" data-scroll="services" onClick={handleSmoothScroll}>
                     Services </a>
                 </label>
-                <button className="book-now">Projects</button>
+                <Link to="/projects" className="proj-page">Projects</Link>
               </li>
             </ul>
           </div>
         </div>
       </header>
-    </section>
+      </>
   );
 }
 
