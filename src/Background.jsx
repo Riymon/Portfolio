@@ -2,7 +2,8 @@ import test from './images/test.png';
 function Background(){
 
     return(
-        <section id="back-sec" className="relative w-full h-[68vh] bg-gradient-to-b from-[#000000] to-[#8f091f] overflow-hidden animate-fadeInUp">
+        <section id="back-sec" className="relative w-full h-[68vh] bg-gradient-to-b from-[#000000]
+         to-[#8f091f] overflow-hidden animate-fadeInUp motion-safe:animate-fadeInUp">
             <div className="absolute bottom-0 w-full h-[10vh] bg-gradient-to-t from-[#000000] rounded-t-[0%] opacity-90 delay-5"></div>
 
             <div className="background">

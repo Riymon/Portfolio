@@ -18,10 +18,6 @@ function Header() {
   };
 
   return (<>
-      <head>
-        <title>Riymon`s Site</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </head>
       <header>
         <div className=" header py-1 grid grid-cols-2 gap-3 my-5 animate-slideFade">
           <div className="logo-name">
@@ -52,4 +48,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Header

@@ -5,10 +5,16 @@ function AboutMe() {
     <>
     <section id="about">
       <h1 className="text2 pr-290 text-shadow-2xs text-4xl">About Me</h1>
-      <div id="about-me" className="mt-50% text-hover text1 grid grid-cols-1 grid-row-3 gap-4 h-[40vh] my-5 p-4 ">
+      <div id="about-me" className="mt-50% text-hover text1 grid grid-cols-1 grid-row-3 gap-4 h-[40vh] my-5 p-4 
+          ">
           <div className="flex content pt-5 text-left bg-gradient-to-l from-[#000000] rounded-t-[2%]  to-[#8f091f] opacity-90">
               <h1 className="text-2xl ">A bit about me</h1>
-              <p className="text-justify">I'm a self-taught web developer and BSIS Student aiming to get experience in 
+              <p className="text-justify
+                 transition-all duration-100 ease-out transform opacity-80 translate-y-0
+                hover:opacity-70 hover:translate-y-3
+                group-hover:opacity-100 group-hover:translate-y-0
+                motion-reduce:transition-none motion-reduce:transform-none
+                scroll-pt-10">I'm a self-taught web developer and BSIS Student aiming to get experience in 
                 designing new features from ideation to production, 
                 implementation of wireframes and design flows into high performance 
                 software applications. I take into consideration the user experience 
@@ -20,7 +26,12 @@ function AboutMe() {
           </div>
       </div>
       <h1 className="text2 pr-240 text-shadow-2xs text-4xl">Technology and Tool Use</h1>
-      <div className="text1 grid grid-cols-1 grid-row-3 gap-4 h-[40vh] my-5 p-4">
+      <div className="text1 grid grid-cols-1 grid-row-3 gap-4 h-[40vh] my-5 p-4
+           transition-all duration-100 ease-out transform opacity-80 translate-y-0
+                hover:opacity-70 hover:translate-y-3
+                group-hover:opacity-100 group-hover:translate-y-0
+                motion-reduce:transition-none motion-reduce:transform-none
+                scroll-pt-10">
           <div className="block pt-10 pl-18 text-left bg-gradient-to-r from-[#000000] rounded-t-[2%]  to-[#8f091f] opacity-60">
               <p className="text-justify">Using a combination of cutting-edge technologies and reliable open-source software I build user-focused,
               websites
@@ -34,4 +45,4 @@ function AboutMe() {
   
   );
 }
-export default AboutMe;
+export default AboutMe

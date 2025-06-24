@@ -31,7 +31,7 @@ function Content(content) {
   return (
     <>
     <h1 id={content.tag} className="text2 pr-290 text-shadow-2xs text-4xl">{content.title}</h1>
-    <div className="cons text1 grid grid-cols-3 gap-4 h-auto my-2 p-5">
+    <div className="cons text1 grid grid-cols-3 gap-4 h-auto my-2 p-5 ">
         {arr.map((arrs) => (
           <div key={arrs.id} className="subcontent content custom-gradient  hover:animate-fadeInUp hover:bg-[#8f091f] rounded-2xl ">
             <h1 className="text-2xl pb-1">{arrs.h}</h1>
@@ -48,4 +48,4 @@ function Content(content) {
 
   );
 }
-export default Content;
+export default Content

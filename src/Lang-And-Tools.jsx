@@ -34,4 +34,4 @@ function Lang_And_Tools() {
   );
 }
 
-export default Lang_And_Tools;
+export default Lang_And_Tools

@@ -1,9 +1,9 @@
 import './App.css'
-import Header from './header'
-import Background from './Background'
-import Content from './Content'
-import AboutMe from './About-me'
-import Footer from './footer'
+import Header from './header.jsx'
+import Background from './Background.jsx'
+import Content from './Content.jsx'
+import AboutMe from './About-me.jsx'
+import Footer from './Footer.jsx'
 
 function HomePage() {
 
@@ -17,7 +17,6 @@ function HomePage() {
         <Content title="My Services" tag="services"/>
         <Footer/>
       </div>
-      <script src='/scripts/script.js'></script>
     </>
   )
 }

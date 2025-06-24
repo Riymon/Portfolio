@@ -1,7 +1,7 @@
 import Header from './header.jsx'
 import Background from './Background.jsx'
 import Content from './Content.jsx'
-import Footer from './footer.jsx'
+import Footer from './Footer.jsx'
 function ProjectPage(){
 
     return(

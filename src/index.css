@@ -217,7 +217,7 @@ body {
     display: flex;
     justify-items: center;
     justify-content: space-evenly;
-    padding: 5vh 80vh;
+    padding: 5vh 20vh;
 }
 .text-hover:hover{
     animation: slideFadeRight 2s ease-out forwards ;
