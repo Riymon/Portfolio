@@ -6,7 +6,7 @@ import discord from './logo/discord.png'
 function Background(){
 
     return(
-        <section id="back-sec" className="relative w-full h-[68vh] bg-gradient-to-b from-[#000000]
+        <section id="back-sec" className="relative w-auto h-[68vh] bg-gradient-to-b from-[#000000]
          to-[#8f091f] overflow-hidden animate-fadeInUp motion-safe:animate-fadeInUp">
             <div className="absolute bottom-0 w-full h-[10vh] bg-gradient-to-t from-[#000000] rounded-t-[0%] opacity-90 delay-5"></div>
             <div className="background">

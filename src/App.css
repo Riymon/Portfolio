@@ -17,11 +17,6 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
-@media only screen and (max-width: 600px) {
-  #root {
-    max-width: 600px;
-  }
-}
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -44,10 +39,15 @@
 .read-the-docs {
   color: #888;
 }
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
+  #root{
+    max-width: 600px;
+    min-width: 350px;
+    padding-left: 0rem;
+  }
   .logo {
-    height: 4em;
-    padding: 1em;
+    height: 4rem;
+    padding: 1rem;
   }
   .card {
     padding: 1rem;
