@@ -109,9 +109,9 @@
 .header {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: auto;
   background-color: var(--black);
-  z-index: 1000; /* ensures it stays above other content */
+  z-index: 100; /* ensures it stays above other content */
   font-size: 18px;
   list-style: none;
   text-decoration: none;
@@ -129,13 +129,13 @@
     justify-items: start;
     align-items: space-between;
     display: inline-block;
-    padding-left: 12vh;
+    padding: 0vh 12vh 0vh 15vh;
 }
 .header ul li{
     text-decoration: none;
     display: inline-block;
     align-items: space-between;
-    padding-left: 5vh;
+    padding-left: 7.2vh;
     font-size: 18px;
     color: var(--white);
     list-style: none;
@@ -225,19 +225,19 @@ body {
 
 
 /* Optional: You can still use your custom styles here */
-
+/* 
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
-    background-color: #ffffff;
+    background-color: var(--black);
   }
   a:hover {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: -;
   }
-}
+} */
 
 @media only screen and (max-width: 600px) {
   .header {
@@ -350,6 +350,13 @@ body {
   }
   .cons{
     padding-top: 5rem;
+    grid-template-columns: 2fr;
+    grid-template-rows: 2fr;
+    grid-gap: .3rem;
+  }
+  .cons .subcontent{
+    width: 22rem;
+    height: auto;
   }
   #services{
     padding-top: 35rem;
