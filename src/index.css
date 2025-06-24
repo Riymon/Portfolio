@@ -6,7 +6,22 @@
     .custom-gradient {
       @apply bg-gradient-to-b from-[#000000] to-[#8f091f];
     }
-     @keyframes slideFadeRight {
+  @keyframes gradient-move {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient-move 8s ease-in-out infinite;
+  }
+  @keyframes float-slow {
+  0%, 100% { transform: translateY(0);}
+  50% { transform: translateY(-10px);}
+}
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+  @keyframes slideFadeRight {
     0% {
       opacity: 0;
       transform: translateX(-30px);
@@ -34,7 +49,7 @@
   .animate-slideFade {
     animation: slideFade 1s ease-out forwards;
   }
-}
+
   @keyframes fadeInUp {
     0% {
       opacity: 0;
@@ -56,13 +71,13 @@
   }
 
   .animate-fadeInUp {
-    animation: fadeInUp 1s ease-out forwards;
+    animation: fadeInUp 2s ease-out forwards;
   }
 
   .animate-riseCurve {
     animation: riseCurve 1.2s ease-out forwards;
   }
-
+}
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -178,10 +193,13 @@ body {
 }
 .content {
     margin-top: 0vh;
-    padding: 10vh 10vh .5vh 10vh;
+    padding: 10vh 8vh .5vh 8vh;
     display: block;
     background-color: var(--red);
     height: auto;
+}
+.cons:hover {
+  animation: slideFadeLeft 1s ease-in-out;
 }
 .tech {
   background-color: var(--black);
@@ -190,15 +208,10 @@ body {
   border-radius: 3vh;
   width: 12%;
 }
-.tech:hover{
-  animation: fadeInUp 1s ease-in;
+.tech:hover, .subcontent:hover{
+  animation: fadeInUp 1s ease-in-out;
   box-shadow: var(--red) 0.5vh 1vh 1vh;
   opacity: 100%;
-}
-.subcontent{
-    display: flex;
-    padding: 0vh 5vh 0vh .5vh;
-    background-color: var(--red);
 }
 .footer{
     display: flex;
@@ -287,6 +300,16 @@ body {
     transform: translateX(0);
   }
 }
+@keyframes slideFadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 .about-me-hover:hover {
   animation: slideFadeRight 0.5s ease-out forwards;
@@ -301,3 +324,13 @@ body {
       transform: translateY(0);
     }
   }
+  @keyframes bottomToCenterGrow {
+    from {
+      transform: translateY(100%) scale(2);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0) scale(1);
+      opacity: 2;
+    }
+}

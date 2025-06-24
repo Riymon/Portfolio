@@ -12,7 +12,7 @@ function Background(){
                 </div>
                 <div className="text pl-50 pt-40">
                     <h1 className='typewriter-text animate-fadeInUp'>HI IM RIYMON ARONG!</h1>
-                    <p className='text-5xl'>FRONT END & BACK END
+                    <p className='text-5xl animate-float-slow duration-75'>FRONT END & BACK END
                     </p>
                 </div>
             </div>
