@@ -18,8 +18,7 @@ function Header() {
   };
 
   return (<>
-      <header>
-        <div className=" header py-1 grid grid-cols-2 gap-3 my-5 animate-slideFade">
+        <div className="header py-1 grid grid-cols-2 gap-3 my-5 animate-slideFade">
           <div className="logo-name">
             <h1>Riymon</h1>
           </div>
@@ -43,7 +42,6 @@ function Header() {
             </ul>
           </div>
         </div>
-      </header>
       </>
   );
 }

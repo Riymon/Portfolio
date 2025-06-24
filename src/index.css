@@ -240,55 +240,120 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-@media (max-width: 600px) {
   .header {
-    flex-direction: column;
+    gap: 2vh;
     align-items: center;
     height: auto;
+    width: 23rem;
     padding: 1rem;
   }
 
-  .header ul li,
-  .right-header {
-    display: block;
-    padding: 0.5rem 0;
+  .header h1 {
+    padding-left: 2vh;
+    font-size: 2.2vh;
     text-align: center;
   }
 
-  .book-now {
-    margin-left: 0;
-  }
-}
-  .header h1{
-    padding-right: 0vh;
-  }
-  .header ul li{
-    padding-left: 0vh;
-  }
-  .content, #about-me {
-    max-width: auto;
-    height: auto;
-  }
-  .par {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    gap: 3rem;
-  }
-  .tech {
-    width: 100%; /* makes them stack nicely */
-    padding: 1rem;
+  .header ul,
+  .right-header {
+    display: block;
+    padding: 0;
+    text-align: center;
   }
 
-  .tech img {
-    position: fixed;
-    width: 100%;
-    height: 100%;
+  .header ul li {
+    display: grid;
+    padding: 0.5rem 0;
+    font-size: 16px;
   }
-  .backg-img{
-    width: 50%;
-    height: auto;  
+  #back-sec{
+    padding-top: '';
   }
-  .background{grid-area: 1 / span 6;}
+  .background {
+
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8rem;
+  }
+
+  #back-sec .text{
+    position: absolute;
+    padding: 2rem 8rem 0rem 5rem;
+  }
+  #back-sec .typewriter-text{
+      font-size: 1rem;
+  }
+  
+  #back-sec p{
+    font-size: 1.5rem;
+  }
+  .content {
+    padding: 4vh 2vh 1vh 2vh;
+    margin-top: 0;
+    height: auto;
+  }
+
+  .footer {
+    flex-direction: column;
+    padding: 3vh 2vh;
+    text-align: center;
+  }
+
+  .footer div {
+    margin-bottom: 1.5vh;
+  }
+
+  .flex.justify-evenly {
+    flex-direction: column;
+    gap: 1vh;
+  }
+
+  .tech {
+    width: 90%;
+    margin: 1vh auto;
+    padding: 1.5vh;
+    font-size: 14px;
+  }
+
+  .back-img,
+  .backg-picture {
+    width: 80%;
+    padding-left: 0;
+    height: auto;
+    padding-top: 3rem;
+  }
+
+  #about .text2{
+    padding-top: 12rem;
+    height: auto;
+  }
+  #about .text1{
+    display: flex;
+    flex-direction: column;
+  }
+  #about .block, .par {
+
+    grid-template-columns: 2fr;
+    grid-template-rows: 2fr;
+    gap: 0.5rem;
+    padding-left: .8rem;
+  }
+  #about .tech{
+    text-align: center;
+  }
+  .par{
+    display: grid;
+    min-width: 0.1rem;
+  }
+  .text {
+    font-size: 2vh;
+  }
+  .cons{
+    padding-top: 5rem;
+  }
+  #services{
+    padding-top: 35rem;
+  }
 }
 @keyframes slideFadeRight {
   from {
