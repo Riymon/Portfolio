@@ -250,7 +250,7 @@ body {
 
   .header h1 {
     padding-left: 2vh;
-    font-size: 2.2vh;
+    font-size: 1.5rem;
     text-align: center;
   }
 
@@ -270,7 +270,6 @@ body {
     padding-top: '';
   }
   .background {
-
     flex-direction: column;
     align-items: center;
     padding-top: 8rem;
@@ -322,8 +321,9 @@ body {
     height: auto;
     padding-top: 3rem;
   }
-  #about .text2{
-    padding-top: 10rem;
+  /* heading About Me */
+  #about .text2{ 
+    padding: 10rem 0rem 0rem .2rem;
     height: auto;
   }
   #about .text1{
@@ -333,6 +333,7 @@ body {
   #about .block, .par {
     grid-template-columns: 9rem 9rem;
     grid-template-rows: auto;
+    align-items: stretch;
     gap: 0.2rem;
     padding-left: .8rem;
   }
@@ -362,7 +363,8 @@ body {
     height: auto;
   }
   #services{
-    padding-top: 35rem;
+    padding: 15rem 0rem 0rem .2rem;
+
   }
 }
 @keyframes slideFadeRight {
