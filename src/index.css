@@ -322,7 +322,7 @@ body {
     padding-top: 3rem;
   }
   /* heading About Me */
-  #about .text2{ 
+  #about .text2, .text2{ 
     padding: 10rem 0rem 0rem .2rem;
     height: auto;
   }
@@ -361,6 +361,25 @@ body {
   .cons .subcontent{
     width: 22rem;
     height: auto;
+  }
+  .footer{
+    width: auto;
+    height: auto;
+  }
+  .footer, footer .flex{
+    display: grid;
+    grid-template-columns: 2rem 3rem;
+    font-size: .6rem;
+    justify-content: right;
+  }
+  footer .pr-90{
+    display: grid;
+    grid-template-columns: 2rem 3.5rem;
+    font-size: .6rem;
+    justify-content: right;
+  }
+  footer div p{
+    margin-right: 15rem;
   }
   #services{
     padding: 15rem 0rem 0rem .2rem;

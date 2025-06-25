@@ -1,3 +1,4 @@
+import './App.css'
 import Header from './header.jsx'
 import Background from './Background.jsx'
 import Content from './Content.jsx'
