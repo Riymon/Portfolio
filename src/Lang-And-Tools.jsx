@@ -5,6 +5,7 @@ import supabase from './logo/supabase.png'
 import mysql from './logo/mysql.png'
 import react from './logo/react.jpg'
 import tailwindcss from './logo/tailwindcss.png';
+import java from './logo/java.png';
 
 function Lang_And_Tools() {
 
@@ -15,7 +16,8 @@ function Lang_And_Tools() {
     { id: 4, img: supabase, p: 'Supabase' },
     { id: 5, img: mysql, p: 'MySQL' },
     { id: 6, img: react, p: 'React' },
-    { id: 7, img: tailwindcss, p: 'Tailwind' }
+    { id: 7, img: tailwindcss, p: 'Tailwind' },
+    { id: 8, img: java, p: 'Java'} 
     
   ];
 
