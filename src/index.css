@@ -115,7 +115,10 @@
   font-size: 18px;
   list-style: none;
   text-decoration: none;
-  padding-top: 1vh;
+  padding-top: 1.2vh;
+  display: grid;
+  grid-template-columns: 85vh 220vh;
+  grid-template-rows: 5vh;
 }
 
 .header h1{
@@ -222,6 +225,19 @@ body {
 .text-hover:hover{
     animation: slideFadeRight 2s ease-out forwards ;
 }
+.contact-sect{
+  padding: 4vh 0vh;
+  margin-left: 55vh;
+}
+.contact {
+  padding: 0vh 5vh 5vh;
+}
+.contact input, textarea{
+  border-bottom: white .5vh solid;
+}
+.contact button{
+  border-radius: 1vh;
+}
 
 
 /* Optional: You can still use your custom styles here */
@@ -246,6 +262,9 @@ body {
     height: auto;
     width: 23rem;
     padding: 1rem;
+    display: grid;
+    grid-template-columns: 10rem 1rem;
+    grid-template-rows: 6.5rem;
   }
 
   .header h1 {
@@ -384,6 +403,9 @@ body {
   #services{
     padding: 15rem 0rem 0rem .2rem;
 
+  }
+  .contact{
+    padding: 0;
   }
 }
 @keyframes slideFadeRight {

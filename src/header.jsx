@@ -18,7 +18,7 @@ function Header() {
   };
 
   return (<>
-        <div className="header py-1 grid grid-cols-2 gap-3 my-5 animate-slideFade">
+        <div className="header pt-5 animate-slideFade">
           <div className="logo-name">
             <h1>Riymon</h1>
           </div>
@@ -26,18 +26,18 @@ function Header() {
             <ul>
               <li>
                 <Link to="/" className="hover:cursor-pointer">Home</Link>
-                <label>
                   <a
                     href="#about" data-scroll="about" onClick={handleSmoothScroll}
                   >
                     About Me
                   </a>
-                </label>
-                <label>
-                    <a href="#services" data-scroll="services" onClick={handleSmoothScroll}>
-                    Services </a>
-                </label>
-                <Link to="/projects" className="proj-page">Projects</Link>
+                  <a href="#services" data-scroll="services" onClick={handleSmoothScroll}>
+                    Services 
+                  </a>
+                  <Link to="/projects"className="proj-page">Project</Link>
+                  <a href="#contact" data-scroll="contact" onClick={handleSmoothScroll}>
+                    Contact 
+                  </a>
               </li>
             </ul>
           </div>
