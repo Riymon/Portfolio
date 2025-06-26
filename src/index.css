@@ -226,11 +226,14 @@ body {
     animation: slideFadeRight 2s ease-out forwards ;
 }
 .contact-sect{
-  padding: 4vh 0vh;
+  padding: 5vh;
   margin-left: 55vh;
 }
 .contact {
   padding: 0vh 5vh 5vh;
+}
+.contact:hover, .contact button{
+    box-shadow: var(--red) 0.5vh 1vh 1vh;
 }
 .contact input, textarea{
   border-bottom: white .5vh solid;
@@ -404,8 +407,21 @@ body {
     padding: 15rem 0rem 0rem .2rem;
 
   }
-  .contact{
-    padding: 0;
+  .contact-sect{
+    padding: 4vh 0vh;
+    margin-left: 2vh;
+    width: fit-content;
+  }
+  .contact {
+    padding: 0vh 4vh 2vh;
+    width: 21.5rem;
+  }
+  .contact input, textarea{
+    border-bottom: white .5vh solid;
+    width: 18rem;
+  }
+  .contact button{
+    border-radius: 1vh;
   }
 }
 @keyframes slideFadeRight {
