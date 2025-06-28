@@ -39,7 +39,7 @@ function Content(content) {
               <img className="h-42" src={arrs.img} alt={arrs.h} />
             )}
             {content.title === 'Projects' && (<p className='text-justify pt-3 '>{arrs.p}</p>)}
-            {content.title === 'Projects' && (<a  className="px-40 py-1 hover:shadow-5xl hover:text-[#8f091f] hover:shadow-[#08d2b0] bg-black rounded-1xl " href={arrs.a}>Visit</a>)}
+            {content.title === 'Projects' && (<a target="_blank" className="px-40 py-1 hover:shadow-5xl hover:text-[#8f091f] hover:shadow-[#08d2b0] bg-black rounded-1xl " href={arrs.a}>Visit</a>)}
             {content.title === 'My Services' && (<p>{arrs.p}</p>)}
           </div>
         ))}

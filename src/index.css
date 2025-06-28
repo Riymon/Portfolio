@@ -230,7 +230,7 @@ body {
   margin-left: 55vh;
 }
 .contact {
-  padding: 0vh 5vh 5vh;
+  padding: 0vh 5vh 2vh;
 }
 .contact:hover, .contact button{
     box-shadow: var(--red) 0.5vh 1vh 1vh;

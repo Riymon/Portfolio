@@ -18,7 +18,7 @@ function Header() {
   };
 
   return (<>
-        <div className="header pt-5 animate-slideFade">
+        <div className="header animate-slideFade">
           <div className="logo-name">
             <h1>Riymon</h1>
           </div>
