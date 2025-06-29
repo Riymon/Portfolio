@@ -2,9 +2,53 @@
 @layer theme, base, components, utilities;
 
 
+
+@layer base {
+   h1{
+    color: var(--red);
+    font-size: 2vh;
+  }
+  .text2{
+      color: var(--red);
+      margin-top: 2vh;
+      padding-top: 5vh;
+  }
+  .text-2xl, footer h1{
+    color: var(--white);
+  }
+}
 @layer utilities {
     .custom-gradient {
       @apply bg-gradient-to-b from-[#000000] to-[#8f091f];
+    }
+
+    #about-me{
+      margin: 20%;
+      grid-gap: 4vh;
+      height: 40%;
+      padding: 4vh 0vh 0vh 3vh;
+    }
+    #about-me .flex {
+      @apply pt-2 text-left bg-gradient-to-l from-[#000000] rounded-t-[2%]  to-[#8f091f] opacity-90;
+    }
+    .pg-about-me{
+      @apply  transition-all duration-100 ease-out transform opacity-80 translate-y-0
+                hover:opacity-70 hover:translate-y-3
+                group-hover:opacity-100 group-hover:translate-y-0
+                motion-reduce:transition-none motion-reduce:transform-none
+                scroll-pt-10;
+      padding-bottom: 5vh;
+    }
+    #about .tech-no{
+      @apply transition-all duration-100 ease-out transform opacity-80 translate-y-0
+                hover:opacity-70 hover:translate-y-3
+                group-hover:opacity-100 group-hover:translate-y-0
+                motion-reduce:transition-none motion-reduce:transform-none
+                scroll-pt-10;
+      height: 40vh;
+    }
+    .tech-no .block{
+      @apply text-left bg-gradient-to-r from-[#000000] rounded-t-[2%]  to-[#8f091f] opacity-60;
     }
   @keyframes gradient-move {
     0%, 100% { background-position: 0% 50%; }
@@ -168,14 +212,6 @@ body {
 }
 .text{
     font-size: 3.2vh;
-}
-.text h1{
-    color: var(--red);
-    font-size: 2vh;
-}
-.text2{
-    color: var(--red);
-    margin-top: 2vh;
 }
 .text1{
     color: var(--white);
