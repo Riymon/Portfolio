@@ -27,7 +27,7 @@ function Lang_And_Tools() {
       className=" par flex pt-2 min-w-4xl min-h-3"
     >
       {technology.map((tech) => (
-        <div key={tech.id} className="flex tech text-white px-5 pt-2 max-w-3.9">
+        <div key={tech.id} className="flex tech max-w-3.9">
           <img src={tech.img} alt={tech.p} className="w-14 h-14 mx-auto" />
           <p className='pt-4 pl-1.5'>{tech.p}</p>
         </div>
